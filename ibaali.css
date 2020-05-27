@@ -290,6 +290,10 @@ a {
     color: inherit
 }
 
+.ib-rounder {
+    border-radius: 30px;
+}
+
 .ib-table,
 .ib-table-all {
     border-collapse: collapse;
