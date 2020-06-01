@@ -297,6 +297,10 @@ a {
 .ib-rounder {
     border-radius: 30px;
 }
+.ib-rounder-img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
 
 .ib-table,
 .ib-table-all {
@@ -738,13 +742,13 @@ a {
     }
 
     .ib-col.m3,
-    .ib-quarter {
+    .ib-third {
         width: 33.333333%
     }
 
     .ib-col.m4,
-    .ib-third {
-        width: 33.33333%
+    .ib-quarter {
+        width: 24.999999%
     }
 
     .ib-col.m5 {
@@ -1072,6 +1076,13 @@ a {
     transform: translate(-50%, 0%);
     -ms-transform: translate(-50%, 0%)
 }
+.ib-display-middle {
+    
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+}
+
 
 .ib-display-container:hover .ib-display-hover {
     display: block
@@ -2428,4 +2439,139 @@ a {
 
 #text {
     opacity: 1 !important; 
+}
+.ib-title1-p2 {
+    color: #58595b ;
+    font-size: 45px;
+}
+.ib-title1-p1 {
+    color: #ffc222 ;
+    font-size: 45px;
+}
+
+
+.ib-title2-p2 {
+    color: #58595b ;
+    font-size: 35px;
+}
+.ib-title2-p1 {
+    
+    font-size: 35px;
+}
+.ib-font-big-antone {
+    font-family: 'Anton', sans-serif;
+    font-weight: 900;
+}
+.ib-font-mid-antone {
+    font-family: 'Anton', sans-serif;
+    font-weight: 600;
+}
+.ib-font-small-antone {
+    font-family: 'Anton', sans-serif;
+    font-weight: 300;
+}
+
+.ib-font-big-cairo {
+    font-family: 'cairo', sans-serif;
+    font-weight: 900;
+}
+.ib-font-mid-cairo {
+    font-family: 'cairo', sans-serif;
+    font-weight: 600;
+}
+.ib-font-small-cairo {
+    font-family: 'cairo', sans-serif;
+    font-weight: 300;
+}
+.ib-font-big-montserrat {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 900;
+}
+.ib-font-mid-montserrat {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+}
+.ib-font-small-montserrat {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.ib-font-big-ubuntu {
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 900;
+}
+.ib-font-mid-ubuntu {
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 600;
+}
+.ib-font-small-ubuntu {
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 300;
+}
+.ib-font-big-titillium {
+    font-family: 'titillium', sans-serif;
+    font-weight: 900;
+}
+.ib-font-mid-titillium {
+    font-family: 'titillium', sans-serif;
+    font-weight: 600;
+}
+.ib-font-small-titillium {
+    font-family: 'titillium', sans-serif;
+    font-weight: 300;
+}
+.ib-font-big-exo {
+    font-family: 'exo', sans-serif;
+    font-weight: 900;
+}
+.ib-font-mid-exo {
+    font-family: 'exo', sans-serif;
+    font-weight: 600;
+}
+.ib-font-small-exo {
+    font-family: 'exo', sans-serif;
+    font-weight: 300;
+}
+.ib-font-big-lato {
+    font-family: 'lato', sans-serif;
+    font-weight: 900;
+}
+.ib-font-mid-lato {
+    font-family: 'lato', sans-serif;
+    font-weight: 600;
+}
+.ib-font-small-lato {
+    font-family: 'lato', sans-serif;
+    font-weight: 300;
+}
+
+.ib-big-title {
+    font-size: 45px;
+}
+
+.ib-small-title {
+    font-size: 35px;
+}
+.ib-mid-tumb {
+    width:40%;
+    text-align: center;
+}
+
+
+.ib-golden {
+    color: #ffc222 ;
+}
+
+.ib-soft-blue {
+    color: #232d39 ;
+}
+.ib-soft-gray {
+    color:#bdc0c0
+}
+.ib-back-blue {
+    background-color: #232d39; 
+}
+.ib-paragraph {
+    text-align: justify;
+    font-size: 18px
 }
