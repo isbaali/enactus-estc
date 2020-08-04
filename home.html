@@ -189,6 +189,17 @@
         </div>
     </div>
 </body>
+    <div class="loader-wrapper">
+    <div id="load">
+        <div>S</div>
+        <div>U</div>
+        <div>T</div>
+        <div>C</div>
+        <div>A</div>
+        <div>N</div>
+        <div>E</div>
+    </div>
+</div>
 <script>
     // Change style of navbar on scroll
     window.onscroll = function() {
@@ -213,4 +224,9 @@
             x.className = x.className.replace(" ib-show", "");
         }
     }
+    
+        $(window).on("load", function() {
+        $(".loader-wrapper").fadeOut("slow");
+    });
+ 
 </script></html>
