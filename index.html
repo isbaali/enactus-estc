@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<title>HOME |Enactus ESTC</title>
+<link rel="icon" href="img/logo.ico" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="ibaali.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Titillium" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2" rel="stylesheet">
+
+<style>
+    body,
+    html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+
+    .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("img/estc4.jpg");
+        min-height: 100%;
+        background-repeat: no-repeat;
+    }
+
+
+    .ib-wide {
+        letter-spacing: 10px;
+    }
+
+    .ib-hover-opacity {
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="ib-top">
+        <div class="ib-bar" id="myNavbar">
+            <a class="ib-bar-item ib-button ib-hide-medium ib-hide-large ib-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a class="ib-bar-item ib-button ib-hide-medium ib-hide-large ib-left " href="coming.html"><img class="ib-big-logo" src="img/big-logo.png"></a>
+
+            <a href="home.html" class="ib-bar-item ib-button ib-hide-small"><img src="img/who-we-are.png" class="ib-icon"> <i class="ib-show-text ib-antone"> WHO WE ARE</i></a>
+            <a href="coming.html" class="ib-bar-item ib-button ib-hide-small"><img src="img/what-we-do.png" class="ib-icon"> <i class="ib-show-text" style="color: #fff ; font-family: Ubuntu"><b> WHAT WE DO</b></i></a>
+            <a href="where-are-we.html" class="ib-bar-item ib-button ib-hide-small"><img src="img/where-we-work.png" class="ib-icon"> <i class="ib-show-text" style="color: #fff ; font-family: Ubuntu"><b> WHERE ARE WE</b></i></a>
+            <a href="our-team.html" class="ib-bar-item ib-button ib-hide-small"><img src="img/our-team.png" class="ib-icon"> <i class="ib-show-text" style="color: #fff ; font-family: Ubuntu"><b> OUR TEAM</b></i></a>
+            <a href="coming.html" class="ib-bar-item ib-button ib-hide-small"><img src="img/join-us.png" class="ib-icon"> <i class="ib-show-text" style="color: #fff ; font-family: Ubuntu"><b>JOIN US</b></i></a>
+            <a href="coming.html" class="ib-bar-item ib-button ib-hide-small ib-right ib-hover-red">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="ib-bar-block ib-enactc  ib-hide ib-hide-large ib-hide-medium">
+            <a href="home.html" class="ib-bar-item ib-button " onclick="toggleFunction()"><img src="img/who-we-are.png" class="ib-icon" style="color: #fff ; font-family: Ubuntu"><b> WHO WE ARE</b></a>
+            <a href="coming.html" class="ib-bar-item ib-button" onclick="toggleFunction()"><img src="img/what-we-do.png" class="ib-icon" style="color: #fff ; font-family: Ubuntu"><b> WHAT WE DO</b></a>
+            <a href="where-are-we.html" class="ib-bar-item ib-button" onclick="toggleFunction()"><img src="img/where-we-work.png" class="ib-icon" style="color: #fff ; font-family: Ubuntu"><b> WHERE ARE WE</b></a>
+            <a href="our-team.html" class="ib-bar-item ib-button"><img src="img/our-team.png" class="ib-icon" style="color: #fff ; font-family: Ubuntu"><b> OUR TEAM</b></a>
+            <a href="coming.html" class="ib-bar-item ib-button"><img src="img/join-us.png" class="ib-icon" style=" color: #fff ; font-family: Ubuntu"><b> JOIN US</b></a>
+        </div>
+    </div>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 ib-display-container ib-grayscale-min" id="home">
+        <div class="ib-display-left ib-text-white" style="padding:48px">
+            <span class="ib-jumbo ib-hide-small">Start something that matters</span><br>
+            <span class="ib-xxlarge ib-hide-large ib-hide-medium">Start something that matters</span><br>
+            <span class="ib-large">Stop wasting valuable time with projects that just isn't you.</span>
+            <p><a href="#about" class="ib-button ib-white ib-padding-large ib-rounder ib-large ib-margin-top ib-opacity ib-hover-opacity-off ib-hover-white">Learn more and start with us</a></p>
+        </div>
+        <div class="ib-display-bottomleft ib-text-white " style="padding:24px 48px; font-size: 20px">
+            <a href="https://www.facebook.com/EnactusESTC/" class="fa fa-facebook-official ib-hover-opacity"></a>
+            <a href="https://www.instagram.com/enactus_estc/" class="fa fa-instagram ib-hover-opacity"></a>
+            <i class="fa fa-twitter ib-hover-opacity"></i>
+            <i class="fa fa-linkedin ib-hover-opacity"></i>
+        </div>
+    </header>
+
+
+    <!-- About Section -->
+    <div class="ib-container" style="padding:10px 16px;background-color:#f2f2f2" id="about">
+        <h2 class="ib-center ib-font-lato ib-big-title ib-soft-blue"><b><span class="ib-golden">WE ARE</span> PART OF</b></h2>
+        <h3 class="ib-center ib-titillium ib-small-title">Enactus morocco network</h3>
+        <div class="ib-row-padding ib-center" style="margin-top:64px">
+            <div class="ib-quarter">
+                <img class="ib-margin-bottom  ib-mid-tumb" src="img/team.png">
+                <p class="ib-xlarge ib-font-exo ib-golden"><b class="ib-soft-blue">+110</b><br>Teams</p>
+            </div>
+            <div class="ib-quarter">
+                <img class="ib-margin-bottom ib-mid-tumb" src="img/students.png">
+                <p class="ib-xlarge ib-font-exo ib-golden"><b class="ib-soft-blue">+5,500</b><br>Student</p>
+            </div>
+            <div class="ib-quarter">
+                <img class="ib-margin-bottom ib-mid-tumb" src="img/hourglass.png">
+                <p class="ib-xlarge ib-font-exo ib-golden"><b class="ib-soft-blue">+1,000,000</b><br>Working Hours</p>
+            </div>
+            <div class="ib-quarter">
+                <img class="ib-margin-bottom ib-mid-tumb" src="img/donation.png">
+                <p class="ib-xlarge ib-font-exo ib-golden"><b class="ib-soft-blue">+195,000</b><br>Beneficiaries</p>
+            </div>
+        </div>
+    </div>
+    <!--     ============= who we are =============== -->
+    <div class="ib-container  ib-padding-32 ib-center ib-back-blue" id="team">
+        <h2 class="ib-center ib-font-lato ib-big-title  ib-text-white"><b><span class="ib-golden">WHO</span> WE ARE</b></h2>
+        <hr style="height:4px;border-width:0;color:gray;background-color: #ffc222">
+
+        <div class="ib-paragraph ib-font-exo ib-text-white"><br>
+            <P style="padding: 0% 20%">Enactus ESTC is a group of passionate students from the superior school of technology which is part of the University Hassan 2 in Casablana. We are committed to using the power of entrepreneurial action to transform lives and create a better, more sustainable world. Our team of over 90 is dedicated to transforming communities, creating innovative solutions, inspiring entrepreneurship, and generating economic opportunities. As diverse and different as each one of us may be, we are all here for one common goal!</P>
+        </div>
+    </div>
+
+
+    <!--   our  projects -->
+    <div class="ib-row-padding ib-padding-64 ib-theme-l1 " style="background-color: #f2f2f2" id="work">
+
+        <div class="ib-third ib-rounder">
+            <h2 class="ib-small-title ib-soft-blue"><b><span class="ib-golden">OUR</span> WORK</b></h2>
+            <p class="ib-font-mid-lato ib-paragraph ib-soft-blue">Our Enactus program is built around our projects. We are committed to applying our passions, talents, and ideas to impact as many lives as we can. We do not simply hand out help to people in need but work side-by-side with them to create opportunities, ensuring every person and community we touch is empowered to live up to its fullest potential.</p>
+        </div>
+
+        <div class="ib-third">
+            <div class="ib-card ib-back-blue ib-rounder"><a href="" style="text-decoration: none">
+                <img src="img/project.jpg" alt="Lights" style="width:100%"
+                     class="ib-rounder-img">
+                <div class="ib-container">
+                    <h3 class="ib-text-white ib-font-big-exo">project 1</h3>
+                    <p class="ib-paragraph ib-font-small-titillium ib-soft-gray">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="ib-third">
+            <div class="ib-card ib-back-blue ib-rounder"><a href="" style="text-decoration: none">
+                <img src="img/project.jpg" alt="Lights" style="width:100%"
+                     class="ib-rounder-img">
+                <div class="ib-container">
+                    <h3 class="ib-text-white ib-font-big-exo">project 2</h3>
+                    <p class="ib-paragraph ib-font-small-titillium ib-soft-gray">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+
+                </div>
+                </a>
+            </div>
+        </div>
+        <div>
+            <p class="ib-center "><a href="#about" class="ib-button ib-black ib-padding-large ib-rounder ib-large ib-margin-top ib-hover-orange ib-center ">Look at more projects</a></p>
+        </div>
+
+    </div>
+
+    <!-- =============== footer ================ -->
+    <br>
+    <div class="ib-container  ib-padding-32" style="background-color: #232d39">
+        <div class="ib-row">
+            <div class="ib-container ib-third">
+                <h5 class="ib-bottombar ib-border-white" style="padding-bottom: 13px"><img class="" src="img/footer-logo.png"></h5>
+                <p style="color: #fff "><b style="font-size: 20px ; font-family: Ubuntu"><span style="color: #ffc222">En</span>trepreneurial</b><br> notre capacité à identifier des opportunités et notre talent à les transformer en projets créateurs de valeur.</p>
+                <p style="color: #fff "><b style="color: #fff ;font-size: 20px ; font-family: Ubuntu"><span style="color: #ffc222">Act</span>ion</b><br> notre volonté de passer à l’action, de mettre en place des projets concrets sur le terrain.</p>
+                <p style="color: #fff "><b style="color: #fff ;font-size: 20px ; font-family: Ubuntu"><span style="color: #ffc222">Us </span>( nous )</b><br> une communauté de professionnels et d’enseignants qui soutiennent une nouvelle génération de jeunes leaders à devenir des acteurs du changement.</p>
+            </div>
+            <div class="ib-container ib-third ib-padding-32">
+                <h5 class="ib-bottombar ib-border-red" style="font-size: 20px ; font-family: Ubuntu;color: #fff;padding-bottom: 5px"><b>Follow Us</b></h5>
+                <p><a href="https://www.facebook.com/EnactusESTC/" class=" hoverer"><img src="img/facebook-w.png" class="ib-icon-fot" id="whit"><img src="img/facebook.png" class="ib-icon-fot" id="clr"></a>
+                </p>
+                <p><a href="https://www.instagram.com/enactus_estc/" class=" hoverer"><img src="img/instagram-w.png" class="ib-icon-fot" id="whit"><img src="img/instagram.png" class="ib-icon-fot" id="clr"></a></p>
+                <p><a href="#" class=" hoverer"><img src="img/youtube-w.png" class="ib-icon-fot" id="whit"><img src="img/youtube.png" class="ib-icon-fot" id="clr"></a></p>
+            </div>
+            <div class="ib-container ib-third ib-padding-32">
+                <h5 class="ib-bottombar ib-border-orange" class="ib-bottombar ib-border-red" style="font-size: 20px ; font-family: Ubuntu;color: #fff ;padding-bottom: 5px"><b>Contact Us</b></h5>
+                <p>Enactus Morocco N R701, Technopark -10.Rue Ghandi, Hassan Rabat – Maroc</p>
+                <p>morocco@enactus.org</p>
+                <p>Tél : +212 537 738 717
+                    <br>Fax : +212 537 760 982</p>
+            </div>
+        </div>
+        <hr style="height:2px;border-width:0;color:gray;background-color: #ffc222">
+        <div class="ib-center">
+            <p style="color: #fff">Created by <a href="https://www.facebook.com/issam.baali.7" target="_blank" style="text-decoration: none;color: #ffc222">IBAALI</a></p>
+        </div>
+    </div>
+</body>
+    <!-- <div class="loader-wrapper">
+    <div id="load">
+        <div>S</div>
+        <div>U</div>
+        <div>T</div>
+        <div>C</div>
+        <div>A</div>
+        <div>N</div>
+        <div>E</div>
+    </div>
+</div> -->
+<script>
+    // Change style of navbar on scroll
+    window.onscroll = function() {
+        myFunction()
+    };
+
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "ib-bar" + " ib-card" + " ib-animate-top" + " ib-white";
+        } else {
+            navbar.className = navbar.className.replace(" ib-card ib-animate-top ib-white", "");
+        }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("ib-show") == -1) {
+            x.className += " ib-show";
+        } else {
+            x.className = x.className.replace(" ib-show", "");
+        }
+    }
+    
+    //     $(window).on("load", function() {
+    //     $(".loader-wrapper").fadeOut("slow");
+    // });
+ 
+</script></html>
