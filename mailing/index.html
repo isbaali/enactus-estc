@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
+
+    <!-- CSS Reset : BEGIN -->
+<style>
+
+html,
+body {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    background: #f1f1f1;
+}
+
+/* What it does: Stops email clients resizing small text. */
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* What it does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+    margin: 0 !important;
+}
+
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,
+td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+    vertical-align: bottom !important;
+}
+
+/* What it does: Fixes webkit padding issue. */
+table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+    margin: 0 auto !important;
+
+}
+
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+    -ms-interpolation-mode:bicubic;
+}
+
+/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+a {
+    text-decoration: none;
+}
+
+/* What it does: A work-around for email clients meddling in triggered links. */
+*[x-apple-data-detectors],  /* iOS */
+.unstyle-auto-detected-links *,
+.aBn {
+    border-bottom: 0 !important;
+    cursor: default !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+.a6S {
+    display: none !important;
+    opacity: 0.01 !important;
+}
+
+/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+.im {
+    color: inherit !important;
+}
+
+/* If the above doesn't work, add a .g-img class to any image in question. */
+img.g-img + div {
+    display: none !important;
+}
+
+/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+/* Create one of these media queries for each additional viewport size you'd like to fix */
+
+/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+    u ~ div .email-container {
+        min-width: 320px !important;
+    }
+}
+/* iPhone 6, 6S, 7, 8, and X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+    u ~ div .email-container {
+        min-width: 375px !important;
+    }
+}
+/* iPhone 6+, 7+, and 8+ */
+@media only screen and (min-device-width: 414px) {
+    u ~ div .email-container {
+        min-width: 414px !important;
+    }
+}
+
+</style>
+
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+<style>
+
+.primary{
+	background: #f3a333;
+}
+
+.bg_white{
+	background: #ffffff;
+}
+.bg_light{
+	background: #fafafa;
+}
+.bg_black{
+	background: #000000;
+}
+.bg_dark{
+	background: rgba(0,0,0,.8);
+}
+.email-section{
+	padding:2.5em;
+}
+
+/*BUTTON*/
+.btn{
+	padding: 10px 15px;
+}
+.btn.btn-primary{
+	border-radius: 30px;
+	background: #f3a333;
+	color: #ffffff;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Playfair Display', serif;
+	color: #000000;
+	margin-top: 0;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.8;
+	color: rgba(0,0,0,.4);
+}
+
+a{
+	color: #f3a333;
+}
+
+table{
+}
+/*LOGO*/
+
+.logo h1{
+	margin: 0;
+}
+.logo h1 a{
+	color: #000;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*HERO*/
+.hero{
+	position: relative;
+}
+.hero img{
+
+}
+.hero .text{
+	color: rgba(255,255,255,.8);
+}
+.hero .text h2{
+	color: #ffffff;
+	font-size: 30px;
+	margin-bottom: 0;
+}
+
+
+/*HEADING SECTION*/
+.heading-section{
+}
+.heading-section h2{
+	color: #000000;
+	font-size: 28px;
+	margin-top: 0;
+	line-height: 1.4;
+}
+.heading-section .subheading{
+	margin-bottom: 20px !important;
+	display: inline-block;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(0,0,0,.4);
+	position: relative;
+}
+.heading-section .subheading::after{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #f3a333;
+	margin: 0 auto;
+}
+
+.heading-section-white{
+	color: rgba(255,255,255,.8);
+}
+.heading-section-white h2{
+	font-size: 28px;
+	font-family: 
+	line-height: 1;
+	padding-bottom: 0;
+}
+.heading-section-white h2{
+	color: #ffffff;
+}
+.heading-section-white .subheading{
+	margin-bottom: 0;
+	display: inline-block;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(255,255,255,.4);
+}
+
+
+.icon{
+	text-align: center;
+}
+.icon img{
+}
+
+
+/*SERVICES*/
+.text-services{
+	padding: 10px 10px 0; 
+	text-align: center;
+}
+.text-services h3{
+	font-size: 20px;
+}
+
+/*BLOG*/
+.text-services .meta{
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+/*TESTIMONY*/
+.text-testimony .name{
+	margin: 0;
+}
+.text-testimony .position{
+	color: rgba(0,0,0,.3);
+
+}
+
+
+/*VIDEO*/
+.img{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.img .icon{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-top: -25px;
+}
+.img .icon a{
+	display: block;
+	width: 60px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -25px;
+}
+
+
+
+/*COUNTER*/
+.counter-text{
+	text-align: center;
+}
+.counter-text .num{
+	display: block;
+	color: #ffffff;
+	font-size: 34px;
+	font-weight: 700;
+}
+.counter-text .name{
+	display: block;
+	color: rgba(255,255,255,.9);
+	font-size: 13px;
+}
+
+
+/*FOOTER*/
+
+.footer{
+	color: rgba(255,255,255,.5);
+
+}
+.footer .heading{
+	color: #ffffff;
+	font-size: 20px;
+}
+.footer ul{
+	margin: 0;
+	padding: 0;
+}
+.footer ul li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+.footer ul li a{
+	color: rgba(255,255,255,1);
+}
+
+
+@media screen and (max-width: 500px) {
+
+	.icon{
+		text-align: left;
+	}
+
+	.text-services{
+		padding-left: 0;
+		padding-right: 20px;
+		text-align: left;
+	}
+
+}
+
+</style>
+
+
+</head>
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">
+	<center style="width: 100%; background-color: #f1f1f1;">
+    <div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+      &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+    </div>
+    <div style="max-width: 600px; margin: 0 auto;" class="email-container">
+    	<!-- BEGIN BODY -->
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+      	<tr>
+          <td class="logo" style="background-color: #232d39;padding: 1em 2.5em; text-align: center">
+            <img src="https://raw.githubusercontent.com/espartahors/espartahors.github.io/main/logo_w.png" style="max-width: 400px;">
+          </td>
+	      </tr><!-- end tr -->
+				<tr>
+          <td valign="middle" class="" style="background-image: url(https://github.com/espartahors/espartahors.github.io/blob/main/back.png?raw=true);background-size:cover ;background-position: center; height: 500px">
+            <table>
+            	<tr>
+            		<td>
+            			<div class="" style="padding: 0 1em; text-align: center;">
+
+            				<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSc184Lw59It7kLtyNqcxu--aAClZNpNrcJKoZB-2XgM0DFfhA/viewform?usp=sf_link" style="text-align: center; font-family: 'lato'; font-size: 26px;	border-radius: 30px; background: #f3a333; color: #ffffff;padding: 10px 10px;">JOIN US</a></p>
+            			</div>
+            		</td>
+            	</tr>
+            </table>
+          </td>
+	      </tr><!-- end tr -->
+	      <tr>
+
+	      	<tr>
+		            <td style="background-color: white" class=" email-section">
+		            	<h2 style="text-align: left; font-family: 'lato'; font-size: 36px; color: #232d39" >Hello dear ESTCien, ESTCienne,</h2>
+						<p style="text-align: justify; font-size: 20px; color: #232d39 ;font-family: 'lato';" ><b>
+							Chez <b style="color: #ffc222;">ENACTUS ESTC</b>,nous croyons que chaque individu porte en lui le désir d'un monde plus juste, plus inclusif, plus durable et que c'est en révélant ces rêves et en donnant confiance en chacun en sa capacité à agir que nous ferons émerger une société parfaite et souhaitable pour tous.
+							nous créons des expériences permettant à chacun de re-découvrir ses aspirations et de développer ses compétences au sein de projets collectifs , pour innover au service du plus grand nombre.</b>
+							<br>
+							<b style="text-align: left; font-family: 'lato'; font-size: 32px; color: #ffc222">WHAT ARE YOU WAITING FOR????</b>
+							<br>
+							<b>
+							Book your seats to join our <b style="color: #ffc222;">ENACTUS ESTC</b> family to live a wonderful entrepreneurial experience with a simple click </b></p>
+							<div class="" style="padding: 0 3em; text-align: center;">
+
+            				<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSc184Lw59It7kLtyNqcxu--aAClZNpNrcJKoZB-2XgM0DFfhA/viewform?usp=sf_link" style="text-align: center; font-family: 'lato'; font-size: 36px;	border-radius: 30px; background: #f3a333; color: #ffffff;padding: 10px 20px;">JOIN US</a></p>
+            				</div>
+
+            				<p style="text-align: center; font-size: 20px; color: #232d39 ;font-family: 'lato';" ><b style="text-align: left; font-size: 30px;">
+							With <b style="color: #ffc222;">ENACTUS ESTC</b> your dream project will turn into reality.</b>
+							<br>
+							<br>
+							<b>  
+							NB: This is just the beginning, the best is yet to come.</b></p>
+
+
+		      </td>
+
+		    </tr>
+		    <!-- --------------------------------------------------- -->
+		    <tr>
+		            <td style="background-color: #232d39" class="bg_white email-section">
+						<h2 style="text-align: center; font-family: 'lato'; font-size: 36px; color: white" ><b><span style="color: #ffc222;">WHO</span> WE ARE</b></h2>
+        				<hr style="height:4px;border-width:0;color:gray;background-color: #ffc222">
+
+        		<div style="text-align: justify; font-size: 20px; color: white;font-family: 'Verdana'" ><br>
+            		<P style="padding: 0% 10%"><span style="color: #ffc222;">ENACTUS ESTC</span> is a group of passionate students from the superior school of technology which is part of the University Hassan 2 in Casablanca. We are committed to using the power of entrepreneurial action to transform lives and create a better, more sustainable world. Our team of over 90 is dedicated to transforming communities, creating innovative solutions, inspiring entrepreneurship, and generating economic opportunities. As diverse and different as each one of us may be, we are all here for one common goal!</P>
+            	</div>
+
+		      </td>
+		    </tr><!-- end:tr -->
+		    <tr>
+		            <td style="background-color: white" class=" email-section">
+						<h2 style="text-align: center; font-family: 'lato'; font-size: 28px; color: #232d39" ><b>To know more about <b style="color: #ffc222;">ENACTUS</b> and its concept, <b style="color: #ffc222;">We</b> invite you to watch this motivational video about us.</b></h2>
+
+        		<div style="text-align: justify; font-size: 16px; color: black;font-family: 'Verdana'" ><br>
+            		<a href="https://www.instagram.com/tv/CHgIk6GFTdV/?utm_source=ig_web_copy_link" target="blank"><img style="height: 300px" src="https://github.com/espartahors/espartahors.github.io/blob/main/video.png?raw=true"></a>
+            	</div>
+            	<br>
+            		<img style="width: 500px; align-items: center;" src="https://github.com/espartahors/espartahors.github.io/blob/main/belive.png?raw=true">
+
+		      </td>
+
+		    </tr><!-- end:tr -->
+      <!-- 1 Column Text + Button : END -->
+
+ 	</tr>
+
+
+
+</table>
+<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+      	<tr>
+          <td valign="middle" style="background-color: #232d39" class=" footer email-section">
+            <table>
+            	<tr>
+                
+                <td valign="top" width="100%" style="padding-top: 20px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td style="text-align: center; padding-left: 5px; padding-right: 5px;">
+                      	<h2 style="text-align: center; font-family: 'lato'; font-size: 28px; color: white" ><b>follow <span style="color: #ffc222">us</span></b></h2>
+                      	<hr style="height:2px;border-width:0;color:gray;background-color: #ffc222">
+                      	<br>
+
+					               <a href="https://www.instagram.com/enactus_estc/" target="blank"><img  style="height: 40px; margin: 0px 15px;;" src="https://github.com/espartahors/espartahors.github.io/blob/main/instagram.png?raw=true"></a>
+					                <a href="https://facebook.com/EnactusESTC" target="blank"><img style="height: 40px;margin: 0px 15px;" src="https://github.com/espartahors/espartahors.github.io/blob/main/facebook.png?raw=true"></a>
+					                <a href="https://www.enactus-estc.team/" target="blank"><img style="height: 40px;margin: 0px 15px;;" src="https://github.com/espartahors/espartahors.github.io/blob/main/web-icon-white-3.jpg?raw=true"></a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr><!-- end: tr -->
+        
+      </table>
+
+</div>
+</center>
+</body>
+</html>
